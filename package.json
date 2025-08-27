@@ -1,22 +1,29 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "a4-printing-landing",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack",
-    "start": "node dist/index.js",
-    "dev": "webpack && node dist/index.js"
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0"
+  },
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "node-loader": "^2.1.0",
-    "ts-loader": "^9.5.2",
-    "typescript": "^5.8.2",
-    "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1"
-  },
-  "dependencies": {}
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }
